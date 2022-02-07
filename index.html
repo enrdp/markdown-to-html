@@ -5,24 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enrico Del Priore - Markdown to HTML</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
 
     <article>
 <!--HEADER-->
     <header>
-      <h1>Enrico Del Priore</h1>
+        <nav class="navigator">
+            <div class="menu">
+                <button class="button-menu">Menu</button>
+            <div class="drop-menu">
+<a href="#hobbies">Hobbies</a>
+<a href="#info">Info</a>
+<a href="#footer">Footer Menu</a>
+
+
+            </div>
+        </div>
+        
+        </nav>
+      <h1 class="center">Enrico Del Priore</h1>
     
-      <p><q><i>Anyone who has never made a mistake has never tried anything new.</i></q> <cite title="A. Einstein">(Albert Einstein)</cite></p>
-      
-      <img class="profile" src="./img/Enrico.jpeg" alt="image profile">
-      
-      <h2>I think, therefore I code.</h2>
+      <p class="center"><q><i>Anyone who has never made a mistake has never tried anything new.</i></q> <cite title="A. Einstein">(Albert Einstein)</cite></p>
+      <div class="center-flex">
+      <img class="profile" src="./img/Enrico.jpeg" alt="image profile" width="">
+    </div>
+      <h2 class="center">I think, therefore I code.</h2>
     </header>
 <!--SECTION: TABLE-->
 <main>
-<section>
-      <table>
+<section><a id="info"></a>
+    <div class="center-flex">
+      <table class="table center">
         <tr>
           <th>Birthday:</th>
           <td><time datetime="1989-07-17">17/07/1989</time></td>
@@ -41,12 +56,13 @@
           <td><input type="checkbox" unchecked></td>
         </tr>
       </table>
+    </div>
     </section>
 <!--SECTION: HOBBIES-->
     <section>
-      <h3>Hobbies</h3>
-
-      <ol>
+      <h3 class="center hobbies"><a id="hobbies"></a>Hobbies</h3>
+    <div class="center-flex">
+      <ol class="background-hobbies">
         <li><strong>Sport</strong></li>
         <ul>
             <li>Basket</li>
@@ -61,32 +77,36 @@
             <li>Fight Club</li>
         </ul>
         <li><strong>Bartending</strong></li>
-      </ol> 
+      </ol>
+    </div>
     </section>
 
-    <section>
+    <section class="center">
       <h4>You can always count on me when...</h4>
       <p>You can count on me when you have any technical or personal problem, your problems are my problems too.
       </p>
     </section>
     <!--SECTION: FUNNY-->
-    <section>
+    <section class="center">
       <h5>Where do the superheroes go shopping? At the supermarket !</h5>
-      <p>When I was working as a bartender, i got the recipe wrong for a cocktail but any customer has realized that instead of using rum I had added gin. All this until a colleague of mine told me this, but now I have continued to do them the same way. And the funny thing is that some customers told me it was the best cocktail they had tried.</p>
+      <p class="left">When I was working as a bartender, i got the recipe wrong for a cocktail but any customer has realized that instead of using rum I had added gin. All this until a colleague of mine told me this, but now I have continued to do them the same way. And the funny thing is that some customers told me it was the best cocktail they had tried.</p>
     
 
-      <h6>My hair is my strength!</h6>
+      <h6 class="center">My hair is my strength!</h6>
     </section>  
     </article>
 </main>
     <!--FOOTER-->
     <footer>
-<nav>
+        <div class="center">
+<nav class="nav">
+    <a id="footer"></a>
       <a href="https://github.com/SashBFa/markdown-to-html/blob/main/index.html">&laquo;  Previous</a> 
-      <p>|| Enrico ||</p> 
+      <p class="inline">|| Enrico ||</p> 
       <a href="https://github.com/fabver82/markdown-to-html/blob/main/index.html">Next &raquo;</a>
 
     </nav>
+</div>
 </footer>
 
     </body>

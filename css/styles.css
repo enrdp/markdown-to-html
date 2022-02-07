@@ -1,0 +1,85 @@
+table.table, .table th, .table td {
+    border: 1px solid black;
+    padding: 5px;
+  }
+table.table{
+  min-width: 350px;
+  border-collapse: collapse;
+  border-radius: 10px;
+  border-style: hidden;
+  box-shadow: 0 0 0 1px #666; 
+  }
+.table th{
+  text-align: left;
+}
+p.inline{
+    display: inline-block;
+}
+.center{
+    text-align: center;
+}
+div.center-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    margin: 25px;
+    padding: 0px;
+}
+ol{
+    border-radius: 25px;
+}
+.left{
+    text-align: left;
+}
+.hobbies{
+    margin-top: 60px;
+}
+.background-hobbies{
+    background-color: #04AA6D;
+}
+.nav a:hover{
+    color: #04AA6D;
+}
+/*  MENU  */
+.drop-menu{
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 0;
+}
+.menu:hover .drop-menu {
+    display: block;
+    
+}
+.button-menu{
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+.menu{
+  position: relative;
+  display: inline-block;
+}
+.drop-menu a{
+    color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.drop-menu a:hover{
+    background-color: #ddd;
+}
+.menu:hover .button-menu{
+    background-color: #3e8e41;
+}
+.navigator{
+    display:flex;
+    justify-content: flex-end;
+}
