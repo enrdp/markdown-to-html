@@ -23,7 +23,7 @@ div.center-flex{
     justify-content: center;
     align-items: center;
 }
-li{
+.background-hobbies li{
     margin: 25px;
     padding: 0px;
 }
@@ -42,44 +42,46 @@ ol{
 .nav a:hover{
     color: #04AA6D;
 }
-/*  MENU  */
-.drop-menu{
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  right: 0;
+a.button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  width: 100px;
 }
-.menu:hover .drop-menu {
-    display: block;
-    
+
+a.button:hover {
+  background-color: #228B22;
+  color: black;
 }
-.button-menu{
+.button {
   background-color: #04AA6D;
   color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
 }
-.menu{
-  position: relative;
-  display: inline-block;
+/*  MENU  */
+ul.ul-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #04AA6D;
+  width:fit-content;
+  display: flex;
+  
 }
-.drop-menu a{
-    color: black;
-  padding: 12px 16px;
-  text-decoration: none;
+
+div.menu{
+display: flex;
+  justify-content: flex-end;
+  }
+  ul.ul-menu li a {
   display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
-.drop-menu a:hover{
-    background-color: #ddd;
-}
-.menu:hover .button-menu{
-    background-color: #3e8e41;
-}
-.navigator{
-    display:flex;
-    justify-content: flex-end;
+
+ul.ul-menu li a:hover {
+  background-color: #228B22;
+  color: black;
 }
